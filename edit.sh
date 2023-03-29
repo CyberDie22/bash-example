@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 #empty
 
-# prompt the user for the file containing the list of approved users
-# read -p "somefile Name: " userfile
 delimiterString=':'
 while IFS="\n" read -r line; do
     IFS=$delimiterString read -a col <<< ${line};

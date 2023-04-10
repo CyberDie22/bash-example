@@ -2,9 +2,11 @@
 
 
 file="file path here people!"
-delimiterString=':'
+delimiterString='a'
 while IFS="\n" read -r line; do
-    IFS=$delimiterString read -a col <<< ${line};
+    IFS=$delimiterString 
+    read -a col <<< ${line};
+    
     DataCol0=${col[0]}
     DataCol1=${col[1]}
 
